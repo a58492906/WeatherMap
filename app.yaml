@@ -1,14 +1,9 @@
-application: projecttest-2017
+application: myapiclient-2017
 version: 1
 runtime: php55
 api_version: 1
 
 handlers:
-- url: /css
-  static_dir: css
-
-- url: /(.+\.php)$
-  script: \1
-
 - url: /.*
-  script: index.php
+  script: index.html
+  
